@@ -1,5 +1,7 @@
 package co.edu.sena.models.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,4 +36,20 @@ public class Usuario2ServiceImpl implements Usuario2Service {
 		// Aqui si la contraseña es correcta , devuelve un mensaje de inicio Exitoso
 		return "Inicio de sesión exitoso";
 	}
+	
+		
+	@Override
+	public List<Usuario2> listarUsuariosLogeados() {
+    return usuario2Repository.findAll();
 }
+	
+	
+
+		}
+
+	
+	
+	
+  
+
+

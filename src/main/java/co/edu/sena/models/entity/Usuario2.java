@@ -14,7 +14,7 @@ public class Usuario2 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column (name = "id_usu") // Este es el identificador unico  Autoincrementable
-	private Long id;
+	private Long idu;
 	@Column (name = "nom_usu") // Este es el Nombre del Usuario
 	private String username;
 	@Column (name = "cont_usu") // Este es la Contraseña
@@ -22,17 +22,17 @@ public class Usuario2 {
 	public Usuario2() {
 		
 	}
-	public Usuario2(Long id, String username, String password) {
+	public Usuario2(Long idu, String username, String password) {
 		
-		this.id = id;
+		this.idu =idu;
 		this.username = username; //Aqui se almacena  el nombre de Usuario
 		this.password = password; //Aqui esta almacena la contraseña
 	}
 	public Long getId() {
-		return id;
+		return idu;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(Long idu) {
+		this.idu =idu;
 	}
 	public String getUsername() {
 		return username;
